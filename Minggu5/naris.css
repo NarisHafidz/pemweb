@@ -1,0 +1,125 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+        height: 75px;
+        width: 100%;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+        background-color: rgb(248, 2, 2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .nav {
+        background-color: rgb(7, 44, 255);
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .nav-ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+    
+    .li-nav {
+        margin: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+    
+    .a-navbar {
+        color: rgb(251, 255, 10);
+        text-decoration: none;
+        font-weight: 800;
+        padding: 10vh;
+    }
+    
+    .kotak-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kotak {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        line-height: 50px;
+        background-color: rgb(7, 255, 48);
+        color: rgb(255, 145, 0);
+        float: left;
+        transition: 1s;
+    }
+    
+    .kotak:hover {
+        transform: rotate(360deg);
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-container {
+        width: 420px;
+        height: 345px;
+    }
+    
+    .article {
+        display: inline-flexbox;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: url("supoter.jpg");
+        background-color: white;
+        float: left;
+        width: 70%;
+        height: 300px;
+        border-radius: 50px;
+        font-style: oblique;
+        font-size: larger;
+        padding-left: 50px;
+        padding-top: 40px;
+        margin-top: 75px;
+        margin-left: 160px;
+        margin-bottom: 67px;
+        color: white;
+    }
+    
+    .section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .footer {
+        border-radius: 5px;
+        height: 50px;
+        width: 100%;
+        background-color: rgb(248, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-size: 30 px;
+        font-style: italic;
+    }

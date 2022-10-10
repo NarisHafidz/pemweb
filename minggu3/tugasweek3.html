@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multimedia - HTML 5</title>
+	</head>
+	<body>
+		<h2>Mengelola File Multimedia - HTML 5</h2>
+		<p>
+			<button onclick="durationVid()"type="button">Duration</button>
+			<button onclick="playVid()"type="button">Play Video</button>
+			<button onclick="pauseVid()"type="button">Pause Video</button>
+			<button onclick="enableCon()"type="button">Enable Control</button>
+			<button onclick="disableCon()"type="button">Disable Control</button>
+		</p>
+		<video id="myVideo">
+			<source src="Naris.mp4.mp4" type="video/mp4">
+		</video>
+	</body>
+<script>
+var vid = document.getElementById("myVideo");
+function playVid(){
+	vid.play();
+}
+function durationVid(){
+	alert(vid.duration);
+}
+function pauseVid(){
+	vid.pause();
+}
+function enableCon(){
+	vid.controls = true;
+	vid.load();
+}
+function disableCon(){
+	vid.controls = false;
+	vid.load();
+}
+</script>
+</html>

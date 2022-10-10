@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Minggu 4</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body class="container">
+    <form method="POST" action="process.php" class="table-container">
+
+        <table class="table">
+
+            <tr>
+                <td>Nama :</td>
+                <td>:</td>
+                <td>
+                    <input type=text name="nama" placeholder="Nama" required>
+                </td>
+            </tr>
+            <tr>
+                <td>NIM :</td>
+                <td>:</td>
+                <td>
+                    <input type=text name="nim" placeholder="Nomor Induk Mahasiswa" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Tgl lahir :</td>
+                <td>:</td>
+                <td>
+                    <input type="date" name="ttl" placeholder="1/1/1" required>
+                </td>
+            </tr>
+            <tr>
+				<td>Hobby Kamu :</td>
+                <td>:</td>
+                <td>
+                    <input type=text name="hobbykamu" placeholder="Masukkan Hobby Kamu" required>
+                </td>
+            </tr>
+            <tr>
+				<td>Alamat Kamu :</td>
+                <td>:</td>
+                <td>
+                    <input type=text name="alamatkamu" placeholder="Masukkan Alamat Kamu" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Program studi</td>
+                <td>:</td>
+                <td>
+                    <select name="prodi" required>
+                        <option>Program studi</option>
+                        <option>S1 Teknik informatika</option>
+                        <option>S1 Sistem informasi</option>
+                        <option>D3 Teknik informatika</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Bidang minat :</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="minatstudi" value="web programming">
+                    <label>Web Programming</label>
+                    <input type="checkbox" name="minatstudi2" value="Mobile programming">
+                    <label>Mobile Programming</label>
+                    <input type="checkbox" name="minatstudi3" value="Data Sciene">
+                    <label>Data Science</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Berkas CV :</td>
+                <td>:</td>
+                <td>
+                    <input type="file" name="file">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="sub">
+                    <input type="reset" name="reset">
+                </td>
+            </tr>
+        </table>
+
+
+
+
+    </form>
+</body>
+
+</html>

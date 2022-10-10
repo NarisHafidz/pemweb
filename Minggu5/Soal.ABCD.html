@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Pelajaran</title>
+</head>
+<body bgcolor="HoneyDew">
+    <h2>SOAL PILIHAN GANDA !!!</h2>
+    <label for="">1.Cerita komedi adalah cerita yang bisa membuat kita menjadi...</label><br>
+    <input type="radio" name="ceritakomedi" id="Menangis">Menangis<br>
+    <input type="radio" name="ceritakomedi" id="Tertawa">Tertawa<br>
+    <input type="radio" name="ceritakomedi" id="Murung">Murung<br>
+    <input type="radio" name="ceritakomedi" id="Takut">Takut<br>
+    <div id="soalsatu"></div>
+
+    <label for="">2.Jika kita sedang ulangan kita tidak diperbolehkan (contek) kata pada dalam kurung yang benar adalah...</label><br>
+    <input type="radio" name="ulangan" id="Contekan">Contekan<br>
+    <input type="radio" name="ulangan" id="Mencontek">Mencontek<br>
+    <input type="radio" name="ulangan" id="Dicontekkan">Dicontekkan<br>
+    <input type="radio" name="ulangan" id="Kecontek">Kecontek<br>
+    <div id="soaldua"></div>
+
+    <label for="">3.Kandang hewan peliharaan harus rajin...</label><br>
+    <input type="radio" name="hewan" id="Dijemur">Dijemur<br>
+    <input type="radio" name="hewan" id="Dibersihkan">Dibersihkan<br>
+    <input type="radio" name="hewan" id="Ditutup">Ditutup<br>
+    <input type="radio" name="hewan" id="Dilakban">Dilakban<br>
+    <div id="soaltiga"></div>
+    
+    <label for="">4.Trima kasih pak, atas waktu yang diberikan kepada saya. Kalimat tersebut adalah bagian wawancara pada tahap ...</label><br>
+    <input type="radio" name="Kalimat" id="persiapan">persiapan<br>
+    <input type="radio" name="Kalimat" id="penutup">penutup<br>
+    <input type="radio" name="Kalimat" id="inti">inti<br>
+    <input type="radio" name="Kalimat" id="pembukaan">pembukaan<br>
+    <div id="soalempat"></div>
+
+    <label for="">5.Alat indra manusia yang paling peka untuk membedakan benda dingin dan benda panas yaitu...</label><br>
+    <input type="radio" name="manusia" id="Telinga">Telinga<br>
+    <input type="radio" name="manusia" id="Kulit">Kulit<br>
+    <input type="radio" name="Hidung" id="Hidung">Hidung<br>
+    <input type="radio" name="manusia" id="Mata">Mata<br>
+    <div id="soallima"></div>
+
+    <button onclick="Submit()">Submit</button>
+    <script>
+        function Submit(){
+            const Menangis= document.querySelector("#Menangis")
+            const Tertawa= document.querySelector("#Tertawa")
+            const Murung= document.querySelector("#Murung")
+            const Takut= document.querySelector("#Takut")
+            let soalpelajaran
+            if (Tertawa.checked) {
+                soalpelajaran='Jawaban Benar'
+                soalsatu.style='color:green;'  
+            }else{
+                soalpelajaran='Jawaban Salah'
+                soalsatu.style='color:red;'
+            }
+            soalsatu.innerHTML =soalpelajaran
+
+            const Contekan= document.querySelector("#Contekan")
+            const Mencontek= document.querySelector("#Mencontek")
+            const Dicontekkan= document.querySelector("#Dicontekkan")
+            const Kecontek= document.querySelector("#Kecontek")
+            let soalpelajaran1
+            if (Mencontek.checked) {
+                soalpelajaran1='Jawaban Benar'
+                soaldua.style='color:green;'  
+            }else{
+                soalpelajaran1='Jawaban Salah'
+                soaldua.style='color:red;'
+            }
+            soaldua.innerHTML =soalpelajaran1
+
+            const Dijemur= document.querySelector("#Dijemur")
+            const Dibersihkan= document.querySelector("#Dibersihkan")
+            const Ditutup= document.querySelector("#Ditutup")
+            const Dilakban= document.querySelector("#Dilakban")
+            let soalpelajaran2
+            if (Dibersihkan.checked) {
+                soalpelajaran2='Jawaban Benar'
+                soaltiga.style='color:green;'  
+            }else{
+                soalpelajaran2='Jawaban Salah'
+                soaltiga.style='color:red;'
+            }
+            soaltiga.innerHTML =soalpelajaran2
+
+            const persiapan= document.querySelector("#persiapan")
+            const penutup= document.querySelector("#penutup")
+            const inti= document.querySelector("#inti")
+            const pembukaan= document.querySelector("#pembukaan")
+            let soalpelajaran3
+            if (penutup.checked) {
+                soalpelajaran3='Jawaban Benar'
+                soalempat.style='color:green;'  
+            }else{
+                soalpelajaran3='Jawaban Salah'
+                soalempat.style='color:red;'
+            }
+            soalempat.innerHTML =soalpelajaran3
+
+            const Telinga= document.querySelector("#Telinga")
+            const Kulit= document.querySelector("#Kulit")
+            const Hidung= document.querySelector("#Hidung")
+            const Mata= document.querySelector("#Mata")
+            let soalpelajaran4
+            if (Kulit.checked) {
+                soalpelajaran4='Jawaban Benar'
+                soallima.style='color:green;'  
+            }else{
+                soalpelajaran4='Jawaban Salah'
+                soallima.style='color:red;'
+            }
+            soallima.innerHTML =soalpelajaran4
+
+        }
+        
+    </script>
+    </form>
+    <center>copyright <i>&copy;</i>By : Naris Hafidz Fahrezi</center>   
+</body>
+</html>
